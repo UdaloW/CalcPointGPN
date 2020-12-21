@@ -106,33 +106,33 @@ public class MainActivity extends AppCompatActivity {
                 if (peopleNum == 1) {
                     oldVlad = Vlad;
                     Vlad = Vlad + points;
-                    txtCopy = "Владек:" + String.format("%.2f", oldVlad) + " + " + points + " = " + String.format("%.2f", Vlad);
+                    txtCopy = "Владек: " + String.format("%.2f", oldVlad) + " + " + points + " = " + String.format("%.2f", Vlad);
                 }
                 if (peopleNum == 2) {
                     oldDima = Dima;
                     Dima = Dima + points;
-                    txtCopy = "Диман:" + String.format("%.2f", oldDima) + " + " + points + " = " + String.format("%.2f", Dima);
+                    txtCopy = "Диман: " + String.format("%.2f", oldDima) + " + " + points + " = " + String.format("%.2f", Dima);
                 }
                 if (peopleNum == 3) {
                     oldRoma = Roma;
                     Roma = Roma + points;
-                    txtCopy = "Ромик:" + String.format("%.2f", oldRoma) + " + "  + points + " = " + String.format("%.2f", Roma);
+                    txtCopy = "Ромик: " + String.format("%.2f", oldRoma) + " + "  + points + " = " + String.format("%.2f", Roma);
                 }
             } else {
                 if (peopleNum == 1) {
                     oldVlad = Vlad;
                     Vlad = Vlad - points;
-                    txtCopy = "Владек:" + String.format("%.2f", oldVlad) + " - " + points + " = " + String.format("%.2f", Vlad);
+                    txtCopy = "Владек: " + String.format("%.2f", oldVlad) + " - " + points + " = " + String.format("%.2f", Vlad);
                 }
                 if (peopleNum == 2) {
                     oldDima = Dima;
                     Dima = Dima - points;
-                    txtCopy = "Диман:" + String.format("%.2f", oldDima) + " - " + points + " = " + String.format("%.2f", Dima);
+                    txtCopy = "Диман: " + String.format("%.2f", oldDima) + " - " + points + " = " + String.format("%.2f", Dima);
                 }
                 if (peopleNum == 3) {
                     oldRoma = Roma;
                     Roma = Roma - points;
-                    txtCopy = "Ромик:" + String.format("%.2f", oldRoma) + " - "  + points + " = " + String.format("%.2f", Roma);
+                    txtCopy = "Ромик: " + String.format("%.2f", oldRoma) + " - "  + points + " = " + String.format("%.2f", Roma);
                 }
             }
             result = Vlad + Roma + Dima;
@@ -190,7 +190,7 @@ public class MainActivity extends AppCompatActivity {
         ClipData buffer = ClipData.newPlainText("text", txtCopy);
         // Copy ClipData to Clipboard.
         this.clipboardManager.setPrimaryClip(buffer);
-        Toast.makeText(getApplicationContext(),"Скопировано в буффер обмена", Toast.LENGTH_SHORT).show();
+        Toast.makeText(getApplicationContext(),"Скопировано в буфер обмена", Toast.LENGTH_SHORT).show();
     }
 
     //Действия при нажатии кнопки "Выполнить"
